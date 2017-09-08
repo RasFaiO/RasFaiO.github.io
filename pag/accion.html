@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="../styles/fonts/style.css">
 	<link rel="icon" href="../assets/img/icono.ico">
 	<link href="https://fonts.googleapis.com/css?family=Arvo|Dosis|Oswald|Raleway" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="../script/btn.js"></script>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
@@ -32,12 +34,15 @@
 			</li>
 		</ul>
 	</nav>
-	<header>
+	<header id="objeto_2" class="escondido">
 		<div>
 			<h1 class="texto_p">PELICULAS DE ACCIÓN</h1>
 			<video id="a" autobuffer autoloop loop autoplay="true" muted="1">
 				<source src="../assets/videos/ghost.mp4" frameborder="0" allowfullscreen>
 			</video>
+			<div id="abajo">
+				<span><i class="icon-chevron-thin-down"></i></span>
+			</div>
 		</div>
 	</header>
 	<section id="pel" class="ar_pe">

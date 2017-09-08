@@ -95,26 +95,32 @@ header {
 }
 /*flecha abajo*/
 #abajo{
-	font-size: 50px;
+	font-size: 20px;
 	width: 50px;
 	height: 50px;
 	position: absolute;
-	text-align: center;
 	left:0;
 	right: 0;
 	bottom: 10px;
-	left:45%;
+	left:49%;
 	color: rgba(255,255,255,0.01);
+	background-color: rgba(26,35,126,0.2);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 #abajo:hover{
 	color: rgba(255,255,255,0.7);
+	background-color: #1A237E;
+	cursor: pointer;
 }
 /*Saludo*/
 .texto_p{
 	position: absolute;
 	left: 0;
 	right: 0;
-	top:70px;
+	bottom: 70px;
 	color: #fff;
 	font-family: 'Dosis', sans-serif;
 	text-align: center;
@@ -211,17 +217,6 @@ section > article{
 	font-family: 'Dosis', sans-serif;
 }
 /*Index*/
-/*transicion*/
-.ef1:hover img{
-	transform: scale(0.1);
-}
-.ef1:hover div{
-	transform: scale(1) rotate(360deg);
-	opacity: 1;
-}
-.ef1:hover div h4,.ef1:hover div p,.ef1:hover div a{
-	opacity: 1;
-}
 /*efecto*/
 .ef1 img{
 	transition: .3s linear;
@@ -252,6 +247,17 @@ section > article{
 	opacity: 0;
 	transition: .4s linear;
 	transition-delay: .6s;
+}
+/*transicion*/
+.ef1:hover img{
+	transform: scale(0.1);
+}
+.ef1:hover div{
+	transform: scale(1) rotate(360deg);
+	opacity: 1;
+}
+.ef1:hover div h4,.ef1:hover div p,.ef1:hover div a{
+	opacity: 1;
 }
 /*suspenso*/
 /*transicion*/
@@ -450,7 +456,7 @@ section > article{
 	position: relative;
 	display: inline-block;
 	background: #1A237E;
-	color: #fff;	
+	color: #fff;
 	width: 100%;
 	font-family: 'Arvo', serif;
 }
@@ -460,7 +466,7 @@ section > article{
 /*phone*/
 @media only screen and (max-device-width: 768px){
 	.texto_p{
-		font-size: 50px;
+		font-size: 40px;
 		bottom: 40%;
 		z-index:1;
 	}
@@ -556,7 +562,7 @@ section > article{
 	}
 	/*efecto suspenso*/
 	.ef1_s img{
-		transform: scale(0) rotate(540deg);
+		transform: scale(1.2) rotate(360deg);
 	}
 	.ef1_s div{
 		background-color: rgba(189,4,196,0.7);
@@ -683,8 +689,9 @@ section > article{
 	#pel{
 		padding-top: 40px;
 	}
-	.foo p{
-		width: 200px;
+	.foo p:first-child{
+		width: 50%;
+		display: block;
 	}
 }
 /*tablet*/
