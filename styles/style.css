@@ -101,18 +101,46 @@ header {
 	position: absolute;
 	left:0;
 	right: 0;
-	bottom: 10px;
+	bottom: 85px;
 	left:49%;
-	color: rgba(255,255,255,0.01);
-	background-color: rgba(26,35,126,0.2);
+	color: #fff;
+	background-color: rgba(26,35,126,1);
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 5;
+}
+.pelicu{
+	margin-bottom: 120px;
+}
+.otrac{
+	margin-bottom: 300px;
 }
 #abajo:hover{
 	color: rgba(255,255,255,0.7);
-	background-color: #1A237E;
+	background-color: #303F9F;
+	cursor: pointer;
+}
+/*Flecha arriba*/
+.arriba{
+	font-size: 20px;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 45px;
+	bottom: 45px;
+	color: #fff;
+	background-color: #000;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 5;
+}
+.arriba:hover{
+	color: rgba(255,255,255,0.7);
+	background-color: #303F9F;
 	cursor: pointer;
 }
 /*Saludo*/
@@ -120,7 +148,7 @@ header {
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 70px;
+	bottom: 120px;
 	color: #fff;
 	font-family: 'Dosis', sans-serif;
 	text-align: center;
@@ -470,6 +498,9 @@ section > article{
 		bottom: 40%;
 		z-index:1;
 	}
+	#abajo{
+		display: none;
+	}
 	.texto_vid{
 		font-size: 30px;
 		z-index: 1;
@@ -701,6 +732,9 @@ section > article{
 		bottom: 45%;
 		z-index:1;
 	}
+	#abajo{
+		display: none;
+	}
 	.texto_vid{
 		font-size: 30px;
 		z-index: 1;
@@ -721,6 +755,7 @@ section > article{
 		width: 90%;
 		margin-right: 5%;
 		margin-left: 5%;
+		margin-top: 60px;
 	}
 	#texto2{
 		font-size: 50px;
